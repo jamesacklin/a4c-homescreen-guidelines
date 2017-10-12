@@ -1,0 +1,4 @@
+body {
+  /* Add body padding for fixed navbar https://getbootstrap.com/docs/3.3/components/#navbar-fixed-top */
+  padding-top: 70px;
+}
