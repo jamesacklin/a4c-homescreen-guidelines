@@ -40,6 +40,14 @@ figcaption p {
 }
 
 @media (min-width: 768px){
+  .figure-example {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .figure-example figure {
+    width: 48%;
+  }
   .section-text {
     padding-top: 3em;
   }
@@ -59,6 +67,8 @@ figcaption p {
   }
 }
 
-@media (min-width: 1280px){
-
+@media (min-width: 1120px){
+  .figure-example figure {
+    width: 30%;
+  }
 }
