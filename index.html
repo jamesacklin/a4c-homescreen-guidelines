@@ -20,8 +20,9 @@
           <li><a href="#overview">Overview</a></li>
           <li><a href="#backgrounds">Backgrounds</a></li>
           <li><a href="#welcome">Welcome Messages</a></li>
-          <!-- <li><a href="#content">Content</a></li>
-            <li><a href="#navigation">Navigation</a></li> -->
+          <li><a href="#navigation">Navigation</a></li>
+          <!-- <li><a href="#content">Content</a></li> -->
+          <!-- <li><a href="#interaction">Interaction Details</a></li> -->
         </ul>
       </div>
     </div>
@@ -43,7 +44,12 @@
       <div class="row">
         <div class="col-xs-12 col-sm-4 section-text">
           <h2>Backgrounds</h2>
-          <p><strong>Six different background image treatments.</strong> Admins should be able to upload their own background image for the homescreen. The shortest side of the user-uploaded image should be scaled to fit within each masked area, and then cropped from the center. The background photo should also be set to 80% opacity, with a pure black (rgb(0,0,0)) background to enhance contrast with overlaid text.</p>
+          <p><strong>Six different background image treatments.</strong></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 section-text">
+          <p>Admins should be able to upload their own background image for the homescreen. The shortest side of the user-uploaded image should be scaled to fit within each masked area, and then cropped from the center. The background photo should also be set to 80% opacity, with a pure black (rgb(0,0,0)) background to enhance contrast with overlaid text.</p>
           <p>There are plenty of suitable, free-to-use background images available on <a href="http://www.unsplash.com">Unsplash</a>. </div>
         <div class="col-sm-8 figure-example">
           <figure> <img src="assets/images/example_BackgroundFullBleed.png" alt="">
@@ -148,19 +154,95 @@
       </div>
     </section>
     <hr>
-    <div class="row">
-      <div class="col-xs-12 col-sm-4 section-text">
-        <h4>3. Custom Header Image</h4>
-        <p>With this option, club admins should be able to upload their own 700x380 image to use as the welcome message. This gives club admins complete creative control over this section of the homescreen.</p>
+    <section>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 section-text">
+          <h4>3. Custom Header Image</h4>
+          <p>With this option, club admins should be able to upload their own 700x380 image to use as the welcome message. This gives club admins complete creative control over this section of the homescreen.</p>
+        </div>
+        <div class="col-sm-8 figure-example">
+          <figure> <img src="assets/images/example_CustomHeader.png" alt="">
+            <figcaption>
+              <p>Custom header image</p>
+            </figcaption>
+          </figure>
+        </div>
       </div>
-      <div class="col-sm-8 figure-example">
-        <figure> <img src="assets/images/example_CustomHeader.png" alt="">
-          <figcaption>
-            <p>Custom header image</p>
-          </figcaption>
-        </figure>
+    </section>
+    <hr>
+    <section id="navigation">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 section-text">
+          <h2>Navigation Styles</h2>
+          <p><strong>Four different styles for navigation content.</strong></p>
+        </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 section-text">
+          <h4>1. Bottom Tabs</h4>
+          <p>Standard iOS tabbed navigation, which has already been implemented.</p>
+        </div>
+        <div class="col-sm-8 figure-example">
+          <figure><img src="assets/images/example_NavBottomTabs.png" alt="">
+            <figcaption>
+              <p>Bottom tabbed navigation</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 section-text">
+          <h4>2. Top Tabs</h4>
+          <p>Similar to the already-implemented bottom tab navigation, except flipped to appear on the top of the screen.</p>
+          <p>The rest of the app content—on all screens—will need to shift down to fit the navigation bar on top.</p>
+        </div>
+        <div class="col-sm-8 figure-example">
+          <figure><img src="assets/images/example_NavTopTabs.png" alt="">
+            <figcaption>
+              <p>Top tabbed navigation</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 section-text">
+          <h4>3. Tiles</h4>
+          <p>Tile navigations are a crisp way to display navigation options and give end-to-end coverage, eliminating the need for an overflow menu and creating a very full-bodied effect for the user. This navigation pattern would be optimal for clubs with a low module count.</p>
+          <p>The user can scroll the stack of tiles back and forth horizontally to see all the options. This pattern appears frequently in Apple apps, such as the App Store itself and Apple Music.</p>
+          <p>The tiles should be spaced 8px apart with a slight drop shadow. The first and last should have a slightly larger buffer on their left and right sides, respectively. The third tile in the series should intentionally run off the side of the screen—this is a common visual trick Apple apps use to show that there is more content hidden, to be shown when the user drags the row left to scroll.</p>
+          <p>Note: this navigation pattern introduces a "hub-and-spokes" approach to navigation. If the user navigates away from the home screen using one of these tiles, they must tap "back" enough times to get back to the home screen to navigate to a different module. This can be good or bad: if the club's module count is low, then there is a less-likely chance that they will need to switch between modules quickly.</p>
+          <p>The rest of the homepage content will need to shift around to fit the tiles in the vertical space needed. Furthermore, their vertical position will depend on the banner message chosen.</p>
+        </div>
+        <div class="col-sm-8 figure-example">
+          <figure><img src="assets/images/example_NavTiles.png" alt="">
+            <figcaption>
+              <p>Tile navigation scheme</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 section-text">
+          <h4>4. Floating Action Button</h4>
+          <p>Adapted from Google's <a href="https://material.io/guidelines/components/buttons-floating-action-button.html">Material Design toolkit</a>, the Floating Action Button is an unobtrusive, persistent button in the lower-right of the user's screen. The button should stay on the screen at all times with a pinned location, "floating" above the content that changes beneath it.</o>
+            <p>When the user taps the Floating Action Button, the button should open a label-free menu similar to the bottom tab bar, using an animated transition. Look to <a href="https://material.io/guidelines/components/buttons-floating-action-button.html#buttons-floating-action-button-transitions">Google's transition guidelines</a> for guidance. The overflow menu should open the same side-panel navigation we have now. Tapping the screen outside the bounds of the menu should close the menu and transition the shape back into a button.</p>
+        </div>
+        <div class="col-sm-8 figure-example">
+          <figure><img src="assets/images/example_NavFabClosed.png" alt="">
+            <figcaption>
+              <p>Floating Action Button</p>
+            </figcaption>
+          </figure>
+          <figure><img src="assets/images/example_NavFabOpen.png" alt="">
+            <figcaption>
+              <p>Floating Action Button menu open</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
     </section>
   </div>
   <footer id="colophon" class="site-footer" role="contentinfo">
@@ -170,4 +252,5 @@
     </div>
   </footer>
 </body>
+
 </html>
