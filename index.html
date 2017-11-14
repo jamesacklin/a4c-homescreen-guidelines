@@ -21,7 +21,8 @@
           <li><a href="#backgrounds">Backgrounds</a></li>
           <li><a href="#welcome">Welcome Messages</a></li>
           <li><a href="#navigation">Navigation</a></li>
-          <!-- <li><a href="#content">Content</a></li> -->
+          <li><a href="#moduletiles">Module Tiles</a></li>
+          <li>&nbsp;</li>
           <!-- <li><a href="#interaction">Interaction Details</a></li> -->
         </ul>
       </div>
@@ -244,6 +245,69 @@
           <figure><img src="assets/images/example_NavFabOpen.png" alt="">
             <figcaption>
               <p>Floating Action Button menu open</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="moduletiles">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 section-text">
+          <h2>Content Tiles</h2>
+          <p><strong>Top-level homescreen information display for each module.</strong></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 section-text">
+          <h4>Standard Module Contents</h4>
+          <p>Regardless of style, each module should have an associated template for homescreen tiles. The general form is <em>headline</em>, <em>content</em> (three lines), and <em>Call-to-Action button</em> (20-character limit, with defaults). There are some exceptions to this: the Loyalty module should display the user's loyalty point balance and barcode, the Course Conditions and Events tiles break the pertainent information out into table views of their own.</p>
+          <p>The Call to Action button, when tapped, should navigate the user to the pertainent item in the corresponding Module. For example, if the user taps "RSVP Now" on an Event tile, they should be taken to the appropriate Event.</p>
+          <hr>
+          <p>As a suggestion, the homescreen tile content should be separate fields when an administrator is creating a new item within a Module. For example, if the module calls for a title, description, and Call to Action in the tile, here's a napkin sketch showing the interface an administrator would see to control those fields:</p>
+          <p><br><img src="assets/images/mockup_tile.png"></p>
+        </div>
+        <div class="col-sm-8 figure-example">
+          <figure>
+            <img class="noshadow" src="assets/images/tiles/tile_message.png" alt="">
+            <figcaption>
+              <p>Message Tile</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="noshadow" src="assets/images/tiles/tile_messagepayment.png" alt="">
+            <figcaption>
+              <p>Message Tile with Payments (useful for soliciting donations or dues)</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="noshadow" src="assets/images/tiles/tile_contest.png" alt="">
+            <figcaption>
+              <p>Contest Tile</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="noshadow" src="assets/images/tiles/tile_event.png" alt="">
+            <figcaption>
+              <p>Event Invitation Tile</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="noshadow" src="assets/images/tiles/tile_loyaltycard.png" alt="">
+            <figcaption>
+              <p>Loyalty Program Tile</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="noshadow" src="assets/images/tiles/tile_dailyspecials.png" alt="">
+            <figcaption>
+              <p>Daily Specials Tile</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="noshadow" src="assets/images/tiles/tile_conditions.png" alt="">
+            <figcaption>
+              <p>Course Conditions Tile</p>
             </figcaption>
           </figure>
         </div>
